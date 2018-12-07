@@ -84,7 +84,7 @@ class AutomationTestUITests: XCTestCase {
         app.staticTexts["3"].tap()
         takeShot(app: app)
         countButton.tap()
-        app.staticTexts["4"].tap()
+        app.staticTexts["411"].tap()
         takeShot(app: app)
         app.terminate()
     }
