@@ -26,7 +26,7 @@ class AutomationTestUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testLC1() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
@@ -44,7 +44,49 @@ class AutomationTestUITests: XCTestCase {
         countButton.tap()
         app.staticTexts["4"].tap()
         takeShot(app: app)
+        app.terminate()
+    }
+    
+    func testLC2() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        let app = XCUIApplication()
+        let countButton = app.buttons["Count"]
+        countButton.tap()
+        app.staticTexts["1"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["2"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["3"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["4"].tap()
+        takeShot(app: app)
+        app.terminate()
+    }
+    
+    func testLC3() {
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let countButton = app.buttons["Count"]
+        countButton.tap()
+        app.staticTexts["1"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["2"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["3"].tap()
+        takeShot(app: app)
+        countButton.tap()
+        app.staticTexts["4"].tap()
+        takeShot(app: app)
+        app.terminate()
     }
 
     func takeShot(app: XCUIApplication) {

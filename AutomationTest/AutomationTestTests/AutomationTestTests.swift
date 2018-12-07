@@ -19,10 +19,26 @@ class AutomationTestTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testUT1() {
+        XCTAssertTrue(true)
     }
+    
+    func testUT2() {
+        XCTAssertTrue(true)
+    }
+    
+    func testUT3() {
+        XCTAssertTrue(true)
+    }
+    
+    func testUT4() {
+        XCTAssertTrue(true)
+    }
+    
+    func testUT5() {
+        XCTAssertTrue(true)
+    }
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
