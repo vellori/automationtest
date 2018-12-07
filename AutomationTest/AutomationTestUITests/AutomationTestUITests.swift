@@ -34,17 +34,23 @@ class AutomationTestUITests: XCTestCase {
         let countButton = app.buttons["Count"]
         countButton.tap()
         app.staticTexts["1"].tap()
-        app.windows.firstMatch.screenshot()
+        takeShot(app: app)
         countButton.tap()
         app.staticTexts["2"].tap()
-        app.windows.firstMatch.screenshot()
+        takeShot(app: app)
         countButton.tap()
         app.staticTexts["3"].tap()
-        app.windows.firstMatch.screenshot()
+        takeShot(app: app)
         countButton.tap()
         app.staticTexts["4"].tap()
-        app.windows.firstMatch.screenshot()
+        takeShot(app: app)
         
     }
 
+    func takeShot(app: XCUIApplication) {
+        let s = app.windows.firstMatch.screenshot()
+        let attach = XCTAttachment(screenshot: s)
+        add(attach)
+    }
+    
 }
