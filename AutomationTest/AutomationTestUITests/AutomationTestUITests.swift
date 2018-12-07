@@ -29,6 +29,22 @@ class AutomationTestUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let countButton = app.buttons["Count"]
+        countButton.tap()
+        app.staticTexts["1"].tap()
+        app.windows.firstMatch.screenshot()
+        countButton.tap()
+        app.staticTexts["2"].tap()
+        app.windows.firstMatch.screenshot()
+        countButton.tap()
+        app.staticTexts["3"].tap()
+        app.windows.firstMatch.screenshot()
+        countButton.tap()
+        app.staticTexts["4"].tap()
+        app.windows.firstMatch.screenshot()
+        
     }
 
 }
